@@ -24,13 +24,13 @@ Here is the documentation to download MySQL: https://www.mysql.com/
 
 The table in MySQL should have 638 rows as the API had in the moment that I wrote this README ('26/09/2024'). 
 
-###Day 1 - create a step-by-step guide for my project:
+### Day 1 - create a step-by-step guide for my project:
 
 1- **Check Necessary Installations**
-*Check Python Installation
-*Check Python Installation
-*Check Power BI Installation
-*Verify Required Python Libraries
+* Check Python Installation
+* Check Python Installation
+* Check Power BI Installation
+* Verify Required Python Libraries
 
 2- **Create the Database in MySQL**
 *  Open MySQL and create the database and the table
