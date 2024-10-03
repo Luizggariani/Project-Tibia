@@ -23,3 +23,28 @@ In the MySQL you should create a database called "Tibia" and a schema called "ti
 Here is the documentation to download MySQL: https://www.mysql.com/
 
 The table in MySQL should have 638 rows as the API had in the moment that I wrote this README ('26/09/2024'). 
+
+###Day 1 - create a step-by-step guide for my project:
+
+1- **Check Necessary Installations**
+*Check Python Installation
+*Check Python Installation
+*Check Power BI Installation
+*Verify Required Python Libraries
+
+2- **Create the Database in MySQL**
+*  Open MySQL and create the database and the table
+  
+3- **Connect to the Tibia API**
+* Access the Tibia API and get creature data. ** Py request
+
+4- **Insert Data into MySQL**
+* Insert the extracted API data into the MySQL database. ** I need to learn how to do this
+
+5- **Verify Data Insertion**
+* Use SELECT * FROM tibia_api.creatures to check if the data was inserted correctly
+
+6- **Create Visualizations in Power BI**
+* Connect Power BI to your MySQL database.
+* Choose MySQL Database create the connection and import the creatures table.
+* Create graphs and visualizations to explore the Tibia creatures.
