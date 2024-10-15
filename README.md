@@ -26,13 +26,13 @@ The table in MySQL should have 638 rows as the API had in the moment that I wrot
 
 ### Day 1 - create a step-by-step guide for my project:
 
-1- **Check Necessary Installations**
+1- **Check Necessary Installations** - Done
 * Check Python Installation
 * Check Python Installation
 * Check Power BI Installation
 * Verify Required Python Libraries
 
-2- **Create the Database in MySQL**
+2- **Create the Database in MySQL** - Done
 *  Open MySQL and create the database and the table
   
 3- **Connect to the Tibia API**
