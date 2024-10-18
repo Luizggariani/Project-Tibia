@@ -35,13 +35,13 @@ The table in MySQL should have 638 rows as the API had in the moment that I wrot
 2- **Create the Database in MySQL** - Done
 *  Open MySQL and create the database and the table
   
-3- **Connect to the Tibia API**
+3- **Connect to the Tibia API** done
 * Access the Tibia API and get creature data. ** Py request
 
-4- **Insert Data into MySQL**
-* Insert the extracted API data into the MySQL database. ** I need to learn how to do this
+4- **Insert Data into MySQL** done 
+* Insert the extracted API data into the MySQL database. 
 
-5- **Verify Data Insertion**
+5- **Verify Data Insertion** done
 * Use SELECT * FROM tibia_api.creatures to check if the data was inserted correctly
 
 6- **Create Visualizations in Power BI**
