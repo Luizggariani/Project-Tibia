@@ -47,4 +47,4 @@ The table in MySQL should have 638 rows as the API had in the moment that I wrot
 6- **Create Visualizations in Power BI**
 * Connect Power BI to your MySQL database. done
 * Choose MySQL Database create the connection and import the creatures table. done
-* Create graphs and visualizations to explore the Tibia creatures.
+* Create graphs and visualizations to explore the Tibia creatures. All done.
