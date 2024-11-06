@@ -57,7 +57,7 @@ The table in MySQL should have 638 rows as the API had in the moment that I wrot
 * Python (3.9)
 * MySQL Workbench (8.0)
 * Power BI
-* Python libraries: requests, mysql-connector-python
+* Python libraries: requests, mysql-connector-python, MySQLdb
 
 ### 🎯 Objectives
 * Extract creature information from the Tibia API.
