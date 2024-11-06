@@ -23,6 +23,15 @@ Here is the documentation to download MySQL: https://www.mysql.com/
 
 The table in MySQL should have 638 rows as the API had in the moment that I wrote this README ('26/09/2024'). 
 
+After this, you need to ingest in different tables the following APIs:
+- characters
+- guilds
+- highscores (add atleast 5 different worlds)
+- houses
+- killstatistics
+- worlds
+
+
 ---
 
 ### Step-by-step guide for my project:
