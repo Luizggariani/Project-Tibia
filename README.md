@@ -2,81 +2,106 @@
 
 ![Tibia icon](https://www.tibiabr.com/wp-content/uploads/2017/12/TibiaDragonLogo_HighRes.png)
 
-## Description of the project and objectives to do:
+## 📖 Project Overview
 
-This is a project that I'm going to do to learn more about the Python Language, SQL and a DBMS and then using PowerBI to show some of the data extracted from the API of Tibia.
-
-1. Tibia API
-
-2. Objective of this project
-
-Extract the data from the API of Tibia in creatures (https://api.tibiadata.com/v4/creatures) and insert into a MySQL database.
-
-In the MySQL you should create a database called "Tibia" and a schema called "tibia_api" and a table called "creatures" with the following columns:
-
-- 'name'
-- 'race'
-- 'image_url'
-- 'featured'
-
-Here is the documentation to download MySQL: https://www.mysql.com/
-
-The table in MySQL should have 638 rows as the API had in the moment that I wrote this README ('26/09/2024'). 
-
-After this, you need to ingest in different tables the following APIs:
-- characters
-- guilds
-- highscores (add atleast 5 different worlds)
-- houses
-- killstatistics
-- worlds
-
+This project is focused on building a Tibia-themed chatbot that integrates Python, SQL, and modern database technologies. The chatbot is designed to extract data from the Tibia API, store it in a PostgreSQL database enhanced with `pgvector` for embeddings, and provide semantic search capabilities through a FastAPI backend. The project is both a learning opportunity for beginners and a practical application for experienced data engineers.
 
 ---
 
-### Step-by-step guide for my project:
+## 🛠️ Technologies and Tools Used
 
-1- **Check Necessary Installations**
-* Check Python Installation
-* Check Python Installation
-* Check Power BI Installation
-* Verify Required Python Libraries
+- **Programming Language**: Python (3.9)
+- **Database**: PostgreSQL (16) with `pgvector` extension for vector embeddings
+- **Backend Framework**: FastAPI
+- **Database Management**: pgAdmin (Windows or Docker-based)
+- **Containerization**: Docker (running on WSL)
+- **VPN for Remote Access**: Tailscale or WireGuard
+- **Python Libraries**: `requests`, `psycopg2`, `pgvector`, `fastapi`, `uvicorn`
 
-2- **Create the Database in MySQL**
-*  Open MySQL and create the database and the table
+---
 
-3- **Connect to the Tibia API**
-* Access the Tibia API and get creature data. ** Py request
+## 🎯 Objectives
 
-4- **Insert Data into MySQL**
-* Insert the extracted API data into the MySQL database. 
+1. **Data Extraction**:
+   - Extract data from the Tibia API, including creatures, characters, guilds, highscores, houses, kill statistics, and worlds.
+   - Use the endpoint `https://api.tibiadata.com/v4/creatures` as the starting point for data ingestion.
 
-5- **Verify Data Insertion**
-* Use SELECT * FROM tibia_api.creatures to check if the data was inserted correctly
+2. **Database Management**:
+   - Store the extracted data in a PostgreSQL database running in a Docker container.
+   - Use the `pgvector` extension to enable vector embeddings for semantic search capabilities.
+   - Organize the database with a schema named `tibia_api` and tables for each data type (e.g., `creatures`, `characters`, etc.).
 
-6- **Create Visualizations in Power BI**
-* Connect Power BI to your MySQL database. 
-* Choose MySQL Database create the connection and import the creatures table.
-* Create graphs and visualizations to explore the Tibia creatures.
+3. **Backend Development**:
+   - Build a FastAPI backend to query the database and provide endpoints for the chatbot.
+   - Implement semantic search functionality using vector similarity over character data.
 
-***
+4. **Remote Access and Security**:
+   - Secure remote access to the database using a VPN solution like Tailscale or WireGuard.
 
+5. **Database Management Tools**:
+   - Use pgAdmin (either on Windows or Docker-based) for managing and visualizing the PostgreSQL database.
 
-### 🛠️ Technologies and Tools Used
-* Python (3.9)
-* MySQL Workbench (8.0)
-* Power BI
-* Python libraries: requests, mysql-connector-python, MySQLdb
+6. **Chatbot Functionality**:
+   - Develop a chatbot capable of performing semantic searches over the data.
+   - Provide meaningful responses based on vector similarity, enhancing the user experience.
 
-### 🎯 Objectives
-* Extract creature information from the Tibia API.
-* Store this data in a creatures table within a MySQL database organized with a specific schema.
-* Visualize and explore the data in Power BI, creating charts and analyses.
- 
-### 💡 Lessons learned and considerations
+---
 
-This data analysis project provided me with an excellent opportunity to apply and consolidate knowledge of data extraction with APIs, MySQL database management and visualization with Power BI. Throughout the process, I was able to experiment with automating data collection, processing and storing information, as well as creating visual reports that make data accessible and informative.
+## 🚀 Step-by-Step Guide
 
-Each stage - from start to finish - presented challenges and valuable learnings, strengthening the mastery of the tools and techniques used.
+### 1. **Environment Setup**
+   - Install Python (3.9) and required libraries.
+   - Install Docker and configure it to run on WSL.
+   - Set up PostgreSQL (16) in a Docker container and install the `pgvector` extension.
 
-This project is just a starting point for other data analysis applications.
+### 2. **Database Creation**
+   - Create a PostgreSQL database named `Tibia`.
+   - Define a schema called `tibia_api` and create tables for creatures, characters, guilds, highscores, houses, kill statistics, and worlds.
+   - Enable vector embeddings using `pgvector` for semantic search.
+
+### 3. **Data Extraction**
+   - Use Python's `requests` library to fetch data from the Tibia API.
+   - Parse and clean the data to match the database schema.
+   - Insert the data into the PostgreSQL database.
+
+### 4. **Backend Development**
+   - Build a FastAPI application to provide RESTful endpoints for querying the database.
+   - Implement semantic search functionality using vector similarity over character data.
+
+### 5. **Remote Access and Security**
+   - Configure a VPN (Tailscale or WireGuard) to secure remote access to the database.
+   - Test the connection to ensure secure and reliable access.
+
+### 6. **Database Management**
+   - Use pgAdmin to manage and visualize the database.
+   - Perform routine maintenance and monitor database performance.
+
+### 7. **Chatbot Development**
+   - Integrate the FastAPI backend with the chatbot interface.
+   - Enable the chatbot to perform semantic searches and provide meaningful responses.
+
+---
+
+## 💡 Lessons Learned and Considerations
+
+This project provided an excellent opportunity to explore and apply various technologies, including:
+
+- **Data Extraction**: Automating the process of fetching and cleaning data from APIs.
+- **Database Management**: Setting up and managing a PostgreSQL database with advanced features like vector embeddings.
+- **Backend Development**: Building a FastAPI backend to serve as the foundation for the chatbot.
+- **Semantic Search**: Implementing vector similarity for advanced search capabilities.
+- **Security**: Securing remote access to the database using VPN solutions.
+- **Containerization**: Running the database in a Docker container for portability and scalability.
+
+Each stage of the project presented unique challenges and valuable learning experiences, making it a comprehensive and rewarding endeavor.
+
+---
+
+## 🌟 Future Enhancements
+
+- Expand the chatbot's functionality to include more advanced natural language processing (NLP) features.
+- Integrate additional APIs to enrich the dataset.
+- Deploy the chatbot as a web application or integrate it with messaging platforms.
+- Optimize the database for handling larger datasets and more complex queries.
+
+This project serves as a foundation for further exploration and development in the fields of data engineering, backend development, and AI-powered applications.
