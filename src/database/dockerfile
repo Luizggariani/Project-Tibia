@@ -1,16 +1,7 @@
 FROM postgres:17
 
-# Install pgvector extension
-# RUN apt-get update && \
-#     apt-get install -y postgresql-server-dev-all build-essential git && \
-#     git clone --branch v0.5.1 https://github.com/pgvector/pgvector.git && \
-#     cd pgvector && \
-#     make && make install
-# && \     cd .. && rm -rf pgvector
-
 RUN apt-get update && \
     apt install postgresql-17-pgvector
     
-
 # Optional: copy init script
 COPY init.sql /docker-entrypoint-initdb.d/
