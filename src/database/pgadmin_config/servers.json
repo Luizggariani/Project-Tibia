@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "Tibia DB",
+            "Group": "Servers",
+            "Host": "172.20.0.1",
+            "Port": 5432,
+            "Username": "tibia_user",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "tibia_db"
+        }
+    }
+}
