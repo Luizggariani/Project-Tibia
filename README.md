@@ -104,4 +104,13 @@ Each stage of the project presented unique challenges and valuable learning expe
 - Deploy the chatbot as a web application or integrate it with messaging platforms.
 - Optimize the database for handling larger datasets and more complex queries.
 
+<<<<<<< HEAD
 This project serves as a foundation for further exploration and development in the fields of data engineering, backend development, and AI-powered applications.
+
+## Project Progress
+
+So far, we have successfully:
+- Set up Git and SSH for secure code management.
+- Configured the PostgreSQL 16 database with the pgvector extension inside a Docker container running on WSL.
+- Established the initial project structure and repository on GitHub.
+>>>>>>> bc2cacd (Clean up temporary text and add project progress note to README)
