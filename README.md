@@ -105,4 +105,9 @@ Each stage of the project presented unique challenges and valuable learning expe
 - Optimize the database for handling larger datasets and more complex queries.
 
 This project serves as a foundation for further exploration and development in the fields of data engineering, backend development, and AI-powered applications.
-##Test change in README via WSL
+## Project Progress
+
+So far, we have successfully:
+- Set up Git and SSH for secure code management.
+- Configured the PostgreSQL 16 database with the pgvector extension inside a Docker container running on WSL.
+- Established the initial project structure and repository on GitHub.
